@@ -21,8 +21,6 @@ func (l *Logs) Set(body string) {
 	fmt.Println(l)
 }
 func (l *Logs) Get(cnt int) Logs {
-	fmt.Println(l)
-	fmt.Println(len(*l) - 1 - cnt)
 	if len(*l)-1-cnt <= 0 {
 		return *l
 	}
